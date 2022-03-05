@@ -36,7 +36,7 @@ TestArgumentsSpecialCaseNoBundle
 ---------- /out.js ----------
 (() => {
   var r;
-  function t(n = arguments) {
+  function a(n = arguments) {
     return arguments;
   }
   (function(n = arguments) {
@@ -45,7 +45,7 @@ TestArgumentsSpecialCaseNoBundle
   ({ foo(n = arguments) {
     return arguments;
   } });
-  class u {
+  class t {
     foo(e = arguments) {
       return arguments;
     }
@@ -55,7 +55,7 @@ TestArgumentsSpecialCaseNoBundle
       return arguments;
     }
   });
-  function t(n = arguments) {
+  function u(n = arguments) {
     var arguments;
     return arguments;
   }

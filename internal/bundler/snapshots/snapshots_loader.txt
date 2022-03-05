@@ -874,9 +874,9 @@ var i=r((t,e)=>{e.exports=123});var s=i();console.log(s,"no identifier in this f
 ================================================================================
 TestNamedFunctionExpressionArgumentCollision
 ---------- /out/entry.js ----------
-let x = function(foo) {
-  var foo;
-  return foo;
+let x = function(foo2) {
+  var foo2;
+  return foo2;
 };
 
 ================================================================================
