@@ -270,6 +270,8 @@ async function test_case(esbuild, test, basename) {
         "!!! failed",
         "---INPUT---",
         "{input}",
+        "---OUTPUT---",
+        "{output}",
         "---EXPECTED {expected_type}---",
         "{expected}",
         "---ACTUAL {actual_type}---",
@@ -278,6 +280,7 @@ async function test_case(esbuild, test, basename) {
         "",
       ].join("\n"), {
         input: input_formatted,
+        output: output,
         expected_type: typeof test.expect_stdout == "string" ? "STDOUT" : "ERROR",
         expected: test.expect_stdout,
         actual_type: typeof actual == "string" ? "STDOUT" : "ERROR",
